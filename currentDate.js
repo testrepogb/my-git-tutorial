@@ -5,7 +5,7 @@ JavaScript Kit (www.javascriptkit.com)
 Over 200+ free scripts here!
 */
 
-var mydate=new Date()
+var mydate=Date()
 var year=
 if (year < 1000)
 year+=1900
