@@ -2,6 +2,8 @@
 #-*- mode: python -*-
 
 from subprocess import Popen, PIPE
+import fnmatch
+import os.path
 import sys
 
 def run(command):
@@ -9,6 +11,11 @@ def run(command):
     p.wait()
     return p.returncode, p.stdout.read().strip().split(), p.stderr.read()
 
+
+DEFAULTS = {
+    'files': '*',
+    'limit': str(10 * 1024 * 1024),
+}
 
 def precommit():
   _, files_modified, _= run("git diff-index --name-only HEAD")
