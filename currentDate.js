@@ -9,6 +9,7 @@ var mydate=Date()
 var year=
 var a
 var b
+var c
 if (year < 1000)
 year+=1900
 var day=mydate.getDay()
