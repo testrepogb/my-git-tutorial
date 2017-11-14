@@ -1,4 +1,4 @@
 my-git-tutoriasssl
 
-testing
+my testing for conflicts
 checking
